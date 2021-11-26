@@ -8,17 +8,26 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="hidden" id="currentID">
     <h2 class="clock"></h2>
-    <div class="greeting">
-    <h2></h2>
-    <h3>sign out</h3>
-    </div>
     <form id="loginForm" class="hidden">
         <input type="text" id="accountID" placeholder="Input Your Account ID">
         <input type="submit">
     </form>
+    
+    <div class="greeting">
+    <h2></h2>
+    <h3>sign out</h3>
+    <form id="todoForm" class="hidden">
+        <input type="text" placeholder="what to do??" required>
+        <input type="submit">
     </form>
+    <ul id="todoList">
+
+    </ul>
+    </div>
     <script src="src/js/clock.js"></script>
     <script src="src/js/login.js"></script>
+    <script src="src/js/todo.js"></script>
 </body>
 </html>
